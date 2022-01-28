@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1496px;
+  height: 900px;
+  background-image: url("secret_code.png");
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-size: cover;
+}
+
+.main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 52px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  width: 700px;
+  position: relative;
+  left: 500px;
+  top: 50px;
+  padding: 15px;
+  width: 20vw;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff;
+
+}
+
+.box {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  -moz-transform: translate(0px, 20px);
+  -webkit-transform: translate(0px, 20px);
+  -o-transform: translate(0px, 20px);
+  -ms-transform: translate(0px, 20px);
+  transform: translate(0px, 20px);
+  position: relative;
+  top:100px;
+  background-image: url("codigo.jpg");
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2em;
+  border-color: black;
+  width: 35vw;
+  height: auto;
+}
+
+.btn {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  border: 0;
+  color: white;
+  font-weight: normal;
+  background-color: black;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  height: 200px;
+}
+
+.instrucao {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #FFFFFF;
+  font-weight: 700;
+  align-content: center;
+  white-space: nowrap;
+  text-shadow: 0 0 30px #C8C8C8, 0 0 40px #C8C8C8, 0 0 55px #C8C8C8, 0 0 75px #C8C8C8, 2px 2px 2px rgba(255,255,255,0), 2px 2px 2px rgba(200,200,200,0), 2px 2px 2px rgba(200,200,200,0);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  width: 500px;
+  position: static;
+  width: 20vw;
+}
+
+.agradecimento {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #FFFFFF;
+  font-weight: 700;
+  white-space: nowrap;
+  text-shadow: 0 0 30px #C8C8C8, 0 0 40px #C8C8C8;
+  font-style: normal;
+  font-variant: small-caps;
+  width: 100px;
+  text-align: right;
+  position: absolute;
+  top: 550px;
+  left: 520px;
+}
+
+ul.contato {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: white;
+  word-spacing: 200px;
+  line-height: 30px;
+  position: absolute;
+  top: 600px;
+  left: 650px;
+  width: 200px;
+  text-align: center;
+  background-size: 100px;
+  display: inline;
+	justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  background-image: url("codigo.jpg");
+  background-size: auto;
+};
