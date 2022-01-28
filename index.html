@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/fc1a157222.js" crossorigin="anonymous"></script>
+  <title>SECRET CODE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">ENCRYPT/DECRYPT</h1>
+
+  <main class="main">
+    <section class="form box">
+      <form action="" id="form">
+        <label for="input-texto" class="instrucao">Apenas letras minúsculas, sem acento</label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" pattern="[/^[a-z]+$/g]" placeholder="Insira o texto aqui">
+        <input class="btn" type="submit" value="Criptografar!" id="btn-cripto">
+        <input class="btn" type="submit" value="Descriptografar!" id="btn-descripto">
+      </form>
+    </section>
+<section class="msg box">
+      <h2 class="instrucao">Mensagem criptografada:</h2>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn" type="submit" value="Copiar" id="btn-copy">
+    </section>
+      <h3 class="agradecimento">@2022 Desenvolvido por Karen Kubo</h2>
+      <div class="criar-box">
+        <ul class = "contato">
+        <p style="font-weight: bold">Contato</p><br>
+        <p><i class="fab fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=5519994380962&text=" class="acesso" style="color: #FFF">Whatsapp</a></p>
+        <p><i class="far fa-envelope"></i><a href="mailto:karennckubo@gmail.com" class="acesso" style="color: #FFF">E-mail</a></p>
+        <p><i class="fab fa-linkedin-in"></i><a href="https://br.linkedin.com/in/karen-kubo-22b929196" class="acesso" style="color: #FFF">Linkedin</a></p>
+        <p><i class="fab fa-github"></i><a href="https://github.com/karennkubo" class="acesso" style="color: #FFF">GitHub</a></p>
+      </ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
