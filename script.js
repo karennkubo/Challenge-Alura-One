@@ -17,20 +17,13 @@ botaoCodificar.addEventListener("click", function (event) {
   var resultadoCodifica = codificarTexto(texto);
   var mensagem = document.querySelector("#msg");
   mensagem.value = resultadoCodifica;
-  document.getElementById("input-texto").onkeypress = e => {
-  var teclaDigitada = String.fromCharCode(e.which);
-  if ("abcdefghijklmnopqrstuvwxyzç".indexOf(teclaDigitada) < 0) {
-    alert('Apenas letras minúsculas!')
-    return false;
-  }
-};
   var form = document.querySelector("#form");
   form.reset();
 });
 
 function codificarTexto(texto) {
   var resultadoCodifica = texto.toLowerCase();
-  resultadoCodifica = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+  resultadoCodifica = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat").replace(/[^a-z ]/gi,'');
   return resultadoCodifica;
 }
 
@@ -41,20 +34,13 @@ botaoDescodificar.addEventListener("click", function (event) {
   var resultadoDescodifica = descodificarTexto(texto);
   var mensagem =  document.querySelector("#msg");
   mensagem.value = resultadoDescodifica;
-  document.getElementById("input-texto").onkeypress = e => {
-  var teclaDigitada = String.fromCharCode(e.which);
-  if ("abcdefghijklmnopqrstuvwxyzç".indexOf(teclaDigitada) < 0) {
-    alert('Apenas letras minúsculas!')
-    return false;
-  }
-};
   var form = document.querySelector("#form");
   form.reset();
 });
 
 function descodificarTexto(texto) {
   var resultadoDescodifica = texto.toLowerCase();
-  resultadoDescodifica = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
+  resultadoDescodifica = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u").replace(/[^a-z ]/gi,'');
   return resultadoDescodifica;
 }
 
